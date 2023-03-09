@@ -1,0 +1,190 @@
+@font-face {
+    font-family: ourFont;
+    src: url(../_font/OpenSans-Regular.ttf);
+}
+
+@media screen and (max-width: 400px) {
+    .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        vertical-align: center;
+        padding: 20px;
+    }
+    
+    .menu a{
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+    }
+    
+    .menu a:hover{
+        color: white;
+        text-decoration: none;
+        filter: invert(30%) sepia(79%) saturate(1200%) hue-rotate(10deg) brightness(120%) contrast(200%);
+        margin: 20px;
+    }
+    
+    .mainText{
+        padding-top: 80px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .svgControll{
+        filter: invert(50%);
+        width: 30px;
+    }
+    
+    .svgActive{
+        filter: invert(100%);
+    }
+    
+    body{
+        font-family: ourFont;
+        background-color: #FFC270;
+    }
+    
+    .termek{
+        width: 40vh;
+        height: 65vh;
+        position: relative;
+        display: inline-block;
+        transform: translate(-50%,-50%);
+        top: 15rem;
+        left: 11.7rem;
+        overflow: hidden;
+        border: 10px solid #ffffff;
+        border-radius: 20px;
+        box-shadow: -1px 5px 15px black;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        align-items: center;
+        align-self: center;
+        background-color: white;
+        z-index: -1;
+        scale: 1vh;
+    }
+    
+    .kepek{
+        width: 100%;
+        display: flex;
+        animation: slide 16s infinite;
+        scale: 92%;
+    }
+    
+    .rovidLeiras{
+        text-align: center;
+        background-color: #CBCBCB;
+        border: solid 3px #CBCBCB;
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: auto;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 1rem;
+    }
+    
+    .rovidLeiras #ar{
+        font-size: 1.5rem;
+        background-color: black;
+        color: #FFC300;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .rovidLeiras #nev{
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .rovidLeiras #tulajdonsag{
+        display: flex;
+        top: 10%;
+    }
+    
+    .termekControll #itemAdd{
+        position: static;
+        display: inline-block;
+        margin-left: 70%;
+        transform: translateY(-90%);
+    }
+    
+    .termekControll #itemMinus{
+        position: static;
+        display: inline-block;
+        margin-left: 58%;
+        transform: translateY(-430%);
+        scale: 80%;
+    }
+    
+    .termekControll #itemPlus{
+        position: static;
+        display: inline-block;
+        margin-left: 87%;
+        transform: translateY(-569%);
+        scale: 80%;
+    }
+    
+    .termekControll #itemFav{
+        position: absolute;
+        display: inline;
+        margin-left: 3%;
+        transform: translateY(-1370%);
+        opacity: 50%;
+    }
+    
+    .termekControll #dbCount{
+        position: absolute;
+        display: inline;
+        margin-left: 15rem;
+        transform: translateY(-870%);
+        font-size: 1.5rem;
+        background-color: black;
+        padding-left: 7%;
+        padding-right: 7%;
+        color:white;
+        border-radius: 25px;
+    }
+    
+    @keyframes slide{
+        0%{
+            transform: translateX(-7%);
+        }
+        25%{
+            transform: translateX(-7%);
+        }
+        30%{
+            transform: translateX(-120%);
+        }
+        50%{
+            transform: translateX(-120%);
+        }
+        55%{
+            transform: translateX(-235%);
+        }
+        75%{
+            transform: translateX(-235%);
+        }
+        80%{
+            transform: translateX(-350%);
+        }
+        95%{
+            transform: translateX(-350%);
+        }
+        100%{
+            transform: translateX(-7%);
+        }
+    }
+}
+
